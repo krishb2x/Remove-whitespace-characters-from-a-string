@@ -1,0 +1,23 @@
+#Remove whitespace characters from a string
+>>> from string import *
+>>> whitespace
+’\t\n\x0b\x0c\r ’
+>>> dna = """
+... aaattcctga gccctgggtg caaagtctca gttctctgaa atcctgacct aattcacaag
+... ggttactgaa gatttttctt gtttccagga cctctacagt ggattaattg gccccctgat
+... tgtttgtcga agaccttact tgaaagtatt caatcccaga aggaagctgg aatttgccct
+... tctgtttcta gtttttgatg agaatgaatc ttggtactta gatgacaaca tcaaaacata
+... ctctgatcac cccgagaaag taaacaaaga tgatgaggaa ttcatagaaa gcaataaaat
+... gcatggtatg tcacattatt ctaaaacaa """
+>>> for s in whitespace:
+... dna = replace(dna, s, "")
+...
+
+
+
+>>> dna
+’aaattcctgagccctgggtgcaaagtctcagttctctgaaatcctgacctaattcacaagggttactga
+agatttttcttgtttccaggacctctacagtggattaattggccccctgattgtttgtcgaagaccttac
+ttgaaagtattcaatcccagaaggaagctggaatttgcccttctgtttctagtttttgatgagaatgaat
+cttggtacttagatgacaacatcaaaacatactctgatcaccccgagaaagtaaacaaagatgatgagga
+attcatagaaagcaataaaatgcatggtatgtcacattattctaaaacaa’
